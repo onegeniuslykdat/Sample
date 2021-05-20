@@ -27,7 +27,7 @@
       <div class="row">
         <div class="col-lg-12 col-md-12">
      <select class="form-select" aria-label="Default select example" id="listNames">
-  <option selected>Select Someone</option>
+  <option value="0" selected>Select Someone</option>
   <option value="Anthony">Anthony</option>
 </select>
                     </div>
@@ -51,7 +51,12 @@
     let msg = document.getElementById("Welcome")
     
     names.addEventListener('change', () => {
+      if(names.value == "0") {
+         msg.innerText = "Welcome";
+      }
+      else {
    msg.innerText = "Welcome, " + names.selectedOptions[0].innerText;
+      }
 })
     </script>
   </body>
