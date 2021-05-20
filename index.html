@@ -46,19 +46,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     
-     <script>
-    let names = document.getElementById("listNames")
-    let msg = document.getElementById("Welcome")
-    
-    names.addEventListener('change', () => {
-      if(names.value == "0") {
-         msg.innerText = "Welcome";
-      }
-      else {
-   msg.innerText = "Welcome, " + names.selectedOptions[0].innerText;
-      }
-})
-    </script>
+     <script type="text/javascript" src="welcome.js"></script>
   </body>
   
   
