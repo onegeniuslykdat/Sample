@@ -3,9 +3,9 @@
     
     names.addEventListener('change', () => {
       if(names.value == "0") {
-         msg.innerText = "Welcome";
+         msg.innerText = "Welcome !";
       }
       else {
-   msg.innerText = "Welcome, " + names.selectedOptions[0].innerText;
+   msg.innerText = "Welcome, " + names.selectedOptions[0].innerText + " !";
       }
 })
